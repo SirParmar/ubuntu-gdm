@@ -12,7 +12,7 @@ This Script requires libglib2.0-dev-bin which can be installed via :  sudo apt i
 Download the Script with following command :
 
 wget github.com/manishonlinux/ubuntu-gdm/raw/master/ubuntu-gdm
-And set it as an executable with chmod +x gdm-change-login-background
+And set it as an executable with chmod +x ubuntu-gdm
 
 # Using the Script
 1. Run the script with root privileges such as sudo ./ubuntu-gdm- /path/to/image

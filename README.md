@@ -1,5 +1,5 @@
 # ubuntu-gdm
-A Script to change GDM login background on Ubuntu 20.04 LTS (focal fossa) and above.
+A Script to change GDM login background to Image or Color on Ubuntu 20.04 LTS (focal fossa) and above.
 
 # Caution
 This script works only on Ubuntu 20.04 and above.

@@ -15,7 +15,6 @@ if [ "$(id -u)" -ne 0 ] ; then
     exit 1
 fi
 
-distro="$(lsb_release -c | cut -f 2)"
 if [ ! "$(lsb_release -c | cut -f 2)" =~ (focal|groovy|hirsute) ]; then
     echo "This script only works with Ubuntu 20.04, 20.04+ and above.
     Quiting....

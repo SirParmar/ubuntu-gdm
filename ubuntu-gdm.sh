@@ -1,8 +1,8 @@
 #!/bin/bash
-# Change GDM Background on Ubuntu 20.04 and above.
-# By Manish Singh Parmar © 2020
-# Contact: ManishOnLinux@gmail.com
+# Change GDM Background on Ubuntu 20.04, 21.04 and above.
+# By Manish Singh Parmar © 2021
 # GitHub : SirParmar
+# Jay Bhawani
 # 
 # =================================================================== #
 
@@ -15,8 +15,10 @@ if [ "$(id -u)" -ne 0 ] ; then
     exit 1
 fi
 
-if [ ! "$(lsb_release -c | cut -f 2)" == focal ]; then
-    echo "This script only works with Ubuntu 20.04 (focal fossa) and above....Exiting.
+distro="$(lsb_release -c | cut -f 2)"
+if [ ! "$(lsb_release -c | cut -f 2)" =~ (focal|groovy|hirsute) ]; then
+    echo "This script only works with Ubuntu 20.04, 20.04+ and above.
+    Quiting....
     Script by : Manish Singh Parmar (github.com/SirParmar)"
     exit 1
 fi
